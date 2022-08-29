@@ -1,0 +1,502 @@
+@media screen and (max-width: 576px)
+    html
+        font-size: 0.3125vw
+        max-width: 100%
+        overflow-x: hidden
+    body
+        overflow-x: hidden
+        max-width: 100%
+    .hidden-mobile
+        display: none
+    .hidden-pc
+        display: block
+    .header
+        padding: 0 20rem
+        &-container
+            width: 100%
+            align-items: center
+        &-logo
+            padding: 10rem
+            img
+                width: 50rem
+                height: 50rem
+        &-contact
+            margin-top: 0
+            &__phone
+                font-size: 14rem
+                line-height: normal
+                svg
+                    margin-right: 5rem
+                    width: 15rem
+                    height: 15rem
+            &__button
+                margin: 5rem auto 0 auto
+                width: 120rem
+        &-burger
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            height: 14rem
+            span
+                background: #ffffff
+                width: 20rem
+                height: 2rem
+        &-nav
+            &__link
+                margin-right: 20rem
+                &:hover
+                    color: #fff
+    .menu
+        &-popup
+            position: absolute
+            width: 100%
+            height: 90%
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            justify-content: space-around
+            transition: 0.4s
+            background: #EA2219
+            z-index: 4
+            top: 0
+            padding: 50rem 0 0 0
+            right: -100%
+            &__active
+                right: 0
+            &__close
+                position: absolute
+                right: 20rem
+                top: 12.5rem
+                font-size: 40rem
+                color: white
+    // header
+    .basic
+        padding-bottom: 50rem
+        position: relative
+        z-index: 2
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            background: #000
+            opacity: 0.4
+            z-index: -1
+        &-text
+            padding: 0 20rem
+            margin-top: 20rem
+            &__container
+                width: 100%
+            &__main
+                width: 100%
+                &-title
+                    font-size: 34rem
+                    line-height: normal
+                    text-align: center
+                    width: 100%
+                &-subtitle
+                    font-size: 28rem
+                    text-align: center
+                    line-height: normal
+            &__desc
+                width: 100%
+                font-size: 18rem
+                text-align: center
+                margin-top: 20rem
+                line-height: normal
+        &-btns
+            &__container
+                width: 100%
+                padding: 0 20rem
+            &__btn
+                width: 100%
+                display: block
+                font-size: 16rem
+                line-height: normal
+                &:last-child
+                    margin-top: 15rem
+                    font-size: 16rem
+                    line-height: normal
+                &:first-child
+                    margin-right: 0
+    // basic
+    .about
+        margin-top: 40rem
+        display: block
+        &-logo
+            margin-left: 0
+            width: 100rem
+            height: 100rem
+            right: -30rem
+            bottom: -25rem
+            top: auto
+            z-index: 0
+        &-container
+            width: auto
+            display: block
+            border-radius: 25rem
+            padding: 10rem
+            margin: 0 20rem
+        &-info
+            width: 100%
+            margin: 0
+            &__title
+                font-size: 24rem
+                line-height: normal
+                text-align: center
+                display: block
+                position: absolute
+                z-index: 1
+            &__name
+                font-size: 36rem
+                line-height: normal
+                text-align: left
+                padding-top: 57rem
+            &__text
+                font-size: 16rem
+                text-align: left
+                &-small
+                    width: 100%
+        &-video
+            width: 100%
+            height: 200rem
+            margin: 10rem 0 0 0
+            &__img
+                border-radius: 20rem
+            svg
+                width: 50rem
+                height: 50rem
+                margin-top: -25rem
+                margin-right: -25rem
+    // about
+    .product
+        padding-top: 100rem
+        padding-bottom: 145rem
+        margin-top: 30rem
+        &-webp
+            background: url(../img/product/bg.webp) center no-repeat
+            background-size: cover
+        &-nowebp
+            background: url(../img/product/bg.png) center no-repeat
+            background-size: cover
+        &-container
+            width: 100%
+            margin: 0
+            display: block
+        &-info
+            margin: 0 20rem
+            &__title
+                font-size: 24rem
+                line-height: normal
+                text-align: center
+            &__text
+                font-size: 14rem
+                line-height: normal
+                text-align: justify
+                &-1,&-2,&-3
+                    width: 100%
+                    text-align: justify
+            &__btn
+                width: 100%
+                margin-top: 15rem
+                font-size: 16rem
+                line-height: normal
+        &-advan
+            margin: 30rem 20rem 0 20rem
+            &__block
+                &-title
+                    font-size: 18rem
+                    line-height: normal
+                    &::before
+                        right: 0
+                        left: 100rem
+                        transform: rotate(180deg)
+                        width: 125rem
+                    &-1
+                        &::before
+                            width: 60rem
+                    &-2
+                        &::before
+                            width: 145rem
+                    &-4
+                        &::before
+                            left: 155rem
+                            width: 100rem
+                &-2,&-3,&-4
+                    margin-top: 20rem
+                    margin-left: 0
+                &-text
+                    &-1,&-2,&-3,&-4
+                        width: 100%
+    // product
+    .select
+        width: 100%
+        margin-top: 40rem
+        &-title
+            font-size: 24rem
+            line-height: normal
+        &-container
+            display: block
+        &-block
+            border-radius: 25rem
+            padding: 10rem
+            margin: 0 20rem
+            &__title
+                width: 250rem
+                margin-right: -125rem
+                height: 45rem
+                p
+                    line-height: normal
+                    font-size: 14rem
+                &-2
+                    p
+                        font-size: 14rem
+            &__img
+                width: 100%
+                height: 300rem
+                object-fit: cover
+                border-radius: 15rem
+            &__desc
+                font-size: 16rem
+                line-height: normal
+                margin-top: 15rem
+                &_2
+                    font-size: 14rem
+                    line-height: normal
+            &__logo
+                width: 100rem
+                height: 100rem
+                bottom: 120rem
+                right: -25rem
+            &__btn
+                margin-top: 15rem
+                font-size: 16rem
+                line-height: normal
+        &-text
+            line-height: normal
+            margin-bottom: 30rem
+            font-size: 40rem
+    // select
+    .delivery
+        width: 100%
+        margin-top: 40rem
+        &-container
+            display: block
+            width: 100%
+        &-info
+            margin: 0 20rem
+            width: auto
+            &__title
+                font-size: 24rem
+                line-height: normal
+                text-align: center
+            &__subtitle
+                font-size: 18rem
+                line-height: normal
+                text-align: justify
+            &__text
+                font-size: 14rem
+                line-height: normal
+                margin-top: 10rem
+                width: 100%
+                text-align: justify
+            &__btns
+                &-btn
+                    width: 100%
+                    margin-right: 0
+                    display: block
+                    font-size: 16rem
+                    line-height: normal
+                    &-2
+                        margin-right: 0
+                        margin-top: 15rem
+                        font-size: 16rem
+                        line-height: normal
+        &-photo
+            width: auto
+            height: 200rem
+            padding: 10rem
+            border-radius: 25rem
+            margin: 20rem 20rem 0 20rem
+            img
+                border-radius: 20rem
+                object-fit: cover
+    // delivey
+    .recipe
+        width: 100%
+        margin-top: 40rem
+        &-name
+            font-size: 16rem
+            line-height: normal
+        &-title
+            font-size: 24rem
+            width: 100%
+            line-height: normal
+            margin-top: 15rem
+        &-subtitle
+            font-size: 18rem
+            line-height: normal
+            margin-top: 25rem
+        &-container
+            width: auto
+            margin: 20rem 20rem 0 20rem
+        &-slider
+            &__block
+                &-img
+                    display: flex
+                    justify-content: center
+                    img
+                        width: 260rem !important
+                        height: 335rem
+                        object-fit: cover
+                &-title
+                    width: 250rem
+                    height: 52rem
+                    margin-right: -125rem
+                    box-shadow: 0px 12rem 10rem rgba(206, 13, 13, 0.0899666), 0px 9.19107px 10rem rgba(206, 13, 13, 0.129246), 0px 2rem 20rem rgba(206, 13, 13, 0.16), 0px 2.75474px 15rem rgba(206, 13, 13, 0.190754), 0px 1.46302px 8rem rgba(206, 13, 13, 0.230033), 0px 0.608796px 6.89047px rgba(206, 13, 13, 0.32)
+                    p
+                        font-size: 14rem
+                        padding: 0
+                        line-height: normal
+                &-text
+                    width: 250rem
+                    margin-top: 45rem
+                    font-size: 14rem
+                    line-height: 20rem
+        &-arrows
+            margin-bottom: 25rem
+    .owl
+        &-dots
+            top: -42rem
+    // recipe
+    .form
+        width: 100%
+        margin-top: 40rem
+        &-container
+            width: auto
+            margin: 0 20rem
+            padding: 10rem
+            border-radius: 30rem
+        &-title
+            font-size: 24rem
+            line-height: normal
+            margin-left: 0
+            text-align: center
+            margin-top: 20rem
+        &-subtitle
+            font-size: 14rem
+            margin-left: 0
+            width: auto
+            text-align: left
+            line-height: 20rem
+        &-wrap
+            display: block
+            margin-left: 0
+        &-block
+            margin-right: 0
+            &__input
+                font-size: 16rem
+                width: 100%
+                margin-top: 15rem
+            &__btn
+                width: 100%
+                margin-top: 20rem
+                font-size: 16rem
+                line-height: normal
+        &-img
+            width: 100%
+            height: 200rem
+            margin-top: 20rem
+    // form
+    .footer
+        margin-top: 50rem
+        &-container
+            width: auto
+            margin: 0 20rem
+            display: block
+            padding-top: 0
+            padding-bottom: 20rem
+        &-logo
+            padding: 10rem
+            margin-right: 0
+            border-radius: 0 0 15rem 15rem
+            img
+                width: 50rem
+                height: 50rem
+        &-nav
+            margin-top: 5rem
+            &__left
+                margin-right: 10rem
+            &__link
+                font-size: 12rem
+                line-height: normal
+                margin-bottom: 2.5rem
+        &-soc
+            margin-right: 0
+            padding: 10rem 25rem 10rem 25rem
+            border: none
+            &__link
+                margin-right: 25rem
+                svg
+                    width: 30rem
+                    height: 30rem
+        &-contact
+            &__num
+                font-size: 14rem
+                line-height: normal
+            &__mail
+                font-size: 14rem
+                line-height: normal
+        &-btn
+            width: 130rem
+        &-wrap
+            &__1
+                justify-content: space-between
+            &__2
+                justify-content: space-between
+                margin-top: 10rem
+        &-btn
+            width: 100%
+            margin-top: 10rem
+            font-size: 16rem
+            line-height: normal
+    // footer
+    .popup
+        &-wrap
+            width: auto
+            margin: 0 20rem
+            padding: 30rem 20rem 25rem 20rem
+        &-title
+            font-size: 24rem
+            line-height: normal
+        &-subtitle
+            font-size: 14rem
+            line-height: normal
+        &-out
+            right: 10rem
+            top: 10rem
+        &-form
+            &__input
+                width: 100%
+            &__btn
+                font-size: 16rem
+                line-height: normal
+    // popup
+    .thanks
+        &-title
+            font-size: 34rem
+            line-height: normal
+        &-subtitle
+            font-size: 18rem
+            margin-top: 5rem
+        &-wrap
+            padding: 0 20rem
+        &-btn
+            width: 100%
+            font-size: 16rem
+            margin-top: 15rem
+
+
+
+
+            
